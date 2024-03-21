@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Patterns example</string>
+    <string name="navigation_menu_main">Главная</string>
+    <string name="navigation_menu_settings">Настройки</string>
+</resources>

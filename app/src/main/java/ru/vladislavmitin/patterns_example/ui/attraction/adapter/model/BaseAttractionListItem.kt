@@ -1,0 +1,3 @@
+package ru.vladislavmitin.patterns_example.ui.attraction.adapter.model
+
+interface BaseAttractionListItem
