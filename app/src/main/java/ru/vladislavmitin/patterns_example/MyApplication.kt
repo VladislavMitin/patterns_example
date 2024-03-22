@@ -3,6 +3,7 @@ package ru.vladislavmitin.patterns_example
 import android.app.Application
 import ru.vladislavmitin.patterns_example.di.ApplicationDependenciesFactory
 import ru.vladislavmitin.patterns_example.di.ApplicationInjector
+import timber.log.Timber
 
 class MyApplication: Application() {
 
@@ -18,5 +19,7 @@ class MyApplication: Application() {
             settingsViewModelFactory = { ApplicationDependenciesFactory.PresentationLayer.settingsViewModelFactory },
             delegatesProvider = { ApplicationDependenciesFactory.PresentationLayer.delegatesProvider },
         )
+
+        Timber.plant(Timber.DebugTree())
     }
 }
